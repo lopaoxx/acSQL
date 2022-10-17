@@ -7,7 +7,7 @@ from ..ambiente.base import session_factory
 def create_people():
     session = session_factory()
     gustavo = Person("Gustavo Lopes", date(2003, 4, 11), 183, 70)
-    beatriz = Person("John Doe", date(2008, 9, 26), 152, 30)
+    beatriz = Person("Beatriz Lopes", date(2008, 9, 26), 152, 30)
     session.add(gustavo)
     session.add(beatriz)
     session.commit()
